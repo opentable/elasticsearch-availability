@@ -5,7 +5,7 @@
   "main": "src/start.js",
   "scripts": {
     "start": "node scripts/start.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava test/**/*.spec.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,8 @@
   "bugs": {
     "url": "https://github.com/opentable/elasticsearch-availability/issues"
   },
-  "homepage": "https://github.com/opentable/elasticsearch-availability#readme"
+  "homepage": "https://github.com/opentable/elasticsearch-availability#readme",
+  "devDependencies": {
+    "ava": "^0.25.0"
+  }
 }
