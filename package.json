@@ -1,0 +1,25 @@
+{
+  "name": "elasticsearch-availability",
+  "version": "1.0.0",
+  "description": "Experimental service responsible for consuming availability changes and writing them to elasticsearch.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opentable/elasticsearch-availability.git"
+  },
+  "keywords": [
+    "elasticsearch",
+    "availability",
+    "feed",
+    "index"
+  ],
+  "author": "Max Gurewitz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opentable/elasticsearch-availability/issues"
+  },
+  "homepage": "https://github.com/opentable/elasticsearch-availability#readme"
+}
