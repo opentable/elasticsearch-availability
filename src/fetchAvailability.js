@@ -1,5 +1,7 @@
 const axios = require('axios');
+const discovery = require('./discovery');
 
 module.exports = async function fetchAvailability(rids) {
-  return axios.post('', {});
+  const url = `${discovery.find('availability-na')}/availability/v2/search`;
+  return axios.post(url, {});
 }
