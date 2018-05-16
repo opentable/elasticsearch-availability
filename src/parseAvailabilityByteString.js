@@ -1,4 +1,5 @@
 const _ = require('lodash');
+const moment = require('moment');
 
 const guestCenterConstants = {
   slotIntervalInMinutes: 15,
@@ -26,6 +27,9 @@ module.exports = function parseAvailabilityByteArray(byteString) {
 
     const dataByte = buffer[bufferIndex];
     const slotByte = slotIndex % 2 == 0 ? dataByte & 0xF0 : dataByte & 0x0F;
-    return { isAvailable: slotByte !== 0 };
+
+    const time = moment().startOf('day').add(slotIndex * cacheServerConstants.csSlotIntervalInMinutes, 'minutes').format('HH:mm');
+
+    return { isAvailable: slotByte !== 0, time };
   });
 }

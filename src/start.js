@@ -1,3 +1,5 @@
+const discovery = require('discovery');
+
 module.exports = async function start() {
-  console.log('loc1');
+  return discovery.connect();
 }
