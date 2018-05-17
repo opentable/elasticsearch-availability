@@ -7,5 +7,12 @@ module.exports = new Discovery(
     'discovery-prod-uswest2.otenv.com'
   ],
   'prod-sc',
-  'elasticsearch-availability'
+  'elasticsearch-availability',
+  {
+    logger: {
+      info() {},
+      debug() {},
+      error: console.error
+    }
+  }
 );
