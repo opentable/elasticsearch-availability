@@ -16,7 +16,9 @@ async function run() {
   console.log(`Took ${time2} ms to complete total availability fetch.`);
 }
 
-run().catch(e => {
-  console.error('failed to execute benchmark: ', e);
-  process.exit(1);
-});
+run()
+  .then(() => { process.exit(0); })
+  .catch(e => {
+    console.error('failed to execute benchmark: ', e);
+    process.exit(1);
+  });
