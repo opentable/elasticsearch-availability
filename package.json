@@ -5,6 +5,7 @@
   "main": "src/start.js",
   "scripts": {
     "start": "node scripts/start.js",
+    "benchmark": "node scripts/benchmarkFetchAvailability.js",
     "test": "ava test/**/*.spec.js"
   },
   "repository": {

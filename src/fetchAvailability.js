@@ -13,7 +13,7 @@ module.exports = async function fetchAvailability(rids) {
   return axios.post(url, {
     BackwardsMinutes: 0,
     ForwardMinutes: dayInMinutes,
-    ForwardDays: 59,
+    ForwardDays: 60,
     LocalExactTime: '00:00',
     LocalStartDate: moment().subtract(1, 'days').format('YYYY-MM-DD'),
     PartySize: 2,
